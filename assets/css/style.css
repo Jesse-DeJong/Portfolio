@@ -1,5 +1,7 @@
 :root {
     --background: #31343d;
+    --navBg: rgb(255, 0, 0);
+    --navBgHighlight: rgba(114, 6, 6, 0.8);
     --transparentBg: rgba(0,0,0,0.5);
     --whiteText: white;
 }
@@ -62,12 +64,30 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    padding: 20px;
-    background: red;
+    line-height: 50px;
+    background: var(--navBg);
+
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navLeft {
+    margin: 0px 1%; /* Y-axis X-axis */
+    display: inline-block;
+}
+.navRight {
+    margin: 0px 1%; /* Y-axis X-axis */
+    display: inline-block;
+}
+
+.navRight p, .navLeft p {
+    padding: 0px 10px;
 }
 
 .navButton:hover {
-    background: var(--background);
+    background: var(--navBgHighlight);
+    cursor: pointer;
 }
 
 /* About Me Section Styling */ 
