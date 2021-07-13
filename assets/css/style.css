@@ -8,15 +8,35 @@ body {
     background: var(--background);
 }
 
+/* Google Fonts */
+.bio {
+    color: var(--whiteText);
+    font-family: 'Shadows Into Light', cursive;
+}
+
 /* Flex Boxing */
-.flexrow {
+.flexRow {
+    display: flex;
+    margin: 1% 10%; /* Y-axis X-axis */
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flexCol {
+    display: flex;
+    margin: 1% 10%; /* Y-axis X-axis */
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexRowNav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .cardLayoutContainer {
-    min-height: 100vh;
+    min-height: 75vh;
     padding: 40px;
 
     display: flex;
@@ -44,6 +64,19 @@ body {
 .navbar {
     padding: 20px;
     background: red;
+}
+
+.navButton:hover {
+    background: var(--background);
+}
+
+/* About Me Section Styling */ 
+.bio h1 {
+    font-size: 30px;
+}
+
+.bio p {
+    font-size: 20px;
 }
 
 /* Card Styling */

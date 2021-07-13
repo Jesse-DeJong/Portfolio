@@ -4,22 +4,37 @@
         <title>Portfolio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Stylesheets & Font Awesome -->
+        <!-- Stylesheets && Font Awesome && Google Fonts -->
         <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/b7f2778b98.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
+    <!-- Nav Bar -->
     <header>
         <nav>
-            <section id="navbar" class="flexrow navbar">
-                <p><i class="fas fa-code"></i> Jesse De Jong</p>
-                <i class="far fa-file-pdf"></i>
+            <section id="navbar" class="flexRowNav navbar">
+                <div class="navLeft">
+                    <p><i class="fas fa-code"></i> Jesse De Jong</p>
+                </div>
+                <div class="navRight">
+                    <p class="navButton">Resume <i class="far fa-file-pdf"></i></p>
+                </div>              
             </section>
         </nav>
     </header>
     
     <body>
+        <!-- About Me -->
+        <section class="bio flexCol">
+            <h1>Who am I?</h1>
+            <br>
+            <p>A nascent software engineer and <span id="bio"></span> looking to expand my coding skillset and create cool things</p>
+        </section>
+
         <section class="cardLayoutContainer">
         <!-- Card 1 -->
         <section class="cardContainer">
