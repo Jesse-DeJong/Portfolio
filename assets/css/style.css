@@ -1,0 +1,16 @@
+:root {
+    --background: #31343d;
+}
+
+/* Flex Boxing */
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Navbar Styling */
+.navbar {
+    padding: 20px;
+    background: red;
+}
