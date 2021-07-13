@@ -46,11 +46,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
 
 .cardContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -105,6 +107,7 @@ body {
     height: inherit;
 
     position: relative;
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
 }
 
 figure {
@@ -151,5 +154,72 @@ img {
 
 .cardContainer:hover {
     cursor: pointer;
+    z-index: 9999;
     transform: scale(1.5);
+}
+
+/* HOVER Effect Cards */
+/* Left */
+.cardLeft {
+	background: #fff;
+	height: 475px;
+    width: 10px;
+
+	border-radius: 0px 5px 5px 0px; /* TopLeft TopRight BotRight BotLeft */
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	
+    transition: width 0.8s;
+}
+
+.cardContainer:hover .cardLeft {
+    /* opacity: 1; */
+    width: 500px;
+
+}
+
+/* Middle */
+.midCardLeft {
+	background: #fff;
+	height: 475px;
+    width: 10px;
+
+	border-radius: 5px 0px 0px 5px; /* TopLeft TopRight BotRight BotLeft */
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	
+    transition: width 0.8s;
+}
+
+.midCardRight {
+	background: #fff;
+	height: 475px;
+    width: 10px;
+
+	border-radius: 0px 5px 5px 0px; /* TopLeft TopRight BotRight BotLeft */
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	
+    transition: width 0.8s;
+}
+
+.cardContainer:hover .midCardLeft {
+    width: 250px;
+}
+.cardContainer:hover .midCardRight {
+    width: 250px;
+}
+
+/* Right */
+.cardRight {
+	background: #fff;
+	height: 475px;
+    width: 10px;
+
+	border-radius: 5px 0px 0px 5px; /* TopLeft TopRight BotRight BotLeft */
+	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+	
+    transition: width 0.8s;
+}
+
+.cardContainer:hover .cardRight {
+    width: 500px;
+
 }

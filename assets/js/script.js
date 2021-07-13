@@ -1,6 +1,10 @@
 // DOM targeting //
 var bio = document.getElementById('bio');
 
+var card1 = document.getElementById('card1');
+var card2 = document.getElementById('card2');
+var card3 = document.getElementById('card3');
+
 // Variables
 var bioInj = [
     "motorcycle enthusiast",
@@ -41,6 +45,18 @@ function bioInjection () {
     // Execute once every second
     },1000);
 }
+
+function card1OnClick () {
+    if (card1.dataset.state == 'transformed') {
+        card1.setAttribute('style', '');
+        card1.setAttribute('data-state', '');
+    } else {
+        card1.setAttribute('style', 'transform:scaleY(1.5);transform:scaleX(2);');
+        card1.setAttribute('data-state', 'transformed');
+    }
+}
+
+card1.addEventListener('click', card1OnClick);
 
 // Call functions that should begin as soon as the page has loaded
 function init () {
