@@ -5,6 +5,9 @@ const card1 = document.getElementById('card1');
 const card2 = document.getElementById('card2');
 const card3 = document.getElementById('card3');
 
+const midCardLeft = document.getElementsByClassName('midCardLeft');
+const cardRight = document.getElementsByClassName('cardRight');
+
 // Variables
 const bioInj = [
     "motorcycle enthusiast",
