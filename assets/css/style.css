@@ -1,5 +1,11 @@
 :root {
     --background: #31343d;
+    --transparentBg: rgba(0,0,0,0.5);
+    --whiteText: white;
+}
+
+body {
+    background: var(--background);
 }
 
 /* Flex Boxing */
@@ -9,8 +15,64 @@
     justify-content: space-between;
 }
 
+.cardLayoutContainer {
+    min-height: 100vh;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 500px;
+    width: 300px;
+    margin: 40px;
+}
+
 /* Navbar Styling */
 .navbar {
     padding: 20px;
     background: red;
+}
+
+/* Card Styling */
+.card {
+    width: inherit;
+    height: inherit;
+
+    position: relative;
+}
+
+figure {
+    z-index: -1;
+}
+
+figcaption {
+    display: block;
+
+    width: auto;
+    margin-bottom: 10%;
+    padding: 8px 22px;
+
+    text-align: left;
+    color: var(--whiteText);
+    background: var(--transparentBg);
+    border-radius: 5px;
+
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+}
+
+img {
+    border-radius: 10px;
 }
