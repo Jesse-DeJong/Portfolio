@@ -153,6 +153,13 @@ img {
     margin: 0px 10px;   /* Y-axis / X-axis */
 }
 
+.midCardContent {
+    opacity: 0;
+    margin: 25px 0px 0px 25px; /* Top  Right Bottom Left */
+
+    transition: opacity 0.2s;
+}
+
 .cardContainer:hover {
     z-index: 9999;
     transform: scale(1.5);
@@ -244,4 +251,11 @@ img {
 
 .cardContainer:hover .cardHorizontalRule {
     opacity: 1;
+}
+
+.cardContainer:hover .midCardContent {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.4s ease-in;
+    transition-delay: 0.4s;
 }
