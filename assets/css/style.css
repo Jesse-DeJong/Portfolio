@@ -86,6 +86,15 @@ body {
     cursor: pointer;
 }
 
+.navButton {
+    text-decoration: none;
+}
+
+a { color: var(--whiteText); }
+a:active { color: var(--whiteText); }
+a:visited { color: var(--whiteText); }
+a:hover { color: var(--whiteText); }
+
 /* About Me Section Styling */ 
 .bio h1 {
     font-size: 30px;
@@ -199,6 +208,10 @@ img {
     opacity: 1;
 }
 
+.cardContainer:hover .cardRightContent {
+    opacity: 1;
+}
+
 /* Middle */
 .midCardLeft {
 	background: #fff;
@@ -242,6 +255,19 @@ img {
 	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
 	
     transition: width 0.8s, margin-left 0.8s;
+}
+
+.cardRightContent {
+    padding: 20px;
+    font-family: 'Shadows Into Light', cursive;
+
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.cardRightContent a {
+    color: black;
+    margin-left: 5px;
 }
 
 .cardContainer:hover .cardRight {

@@ -20,7 +20,8 @@ const bioInj = [
     "petrichor admirer",
     "netflix devotee",
     "parody partaker",
-    "eternal optimist"
+    "eternal optimist",
+    "smogon sycophant"
 ];
 
 const colors = [
@@ -32,12 +33,12 @@ const colors = [
     "pink"
 ];
 
-const cards = [card1, card2, card3];
-const cardAnimations = {
-    jiggle: function(card) { card.setAttribute('class', 'jiggle'); },
-    bounce: function(card) { card.setAttribute('class', 'bounce'); },
-    breathe: function(card) { card.setAttribute('class', 'breathe'); }
-};
+// const cards = [card1, card2, card3];
+// const cardAnimations = {
+//     jiggle: function(card) { card.setAttribute('class', 'jiggle'); },
+//     bounce: function(card) { card.setAttribute('class', 'bounce'); },
+//     breathe: function(card) { card.setAttribute('class', 'breathe'); }
+// };
 
 // Randomly Rotating <span> for Bio
 function bioInjection () {
@@ -55,32 +56,21 @@ function bioInjection () {
     },1000);
 }
 
-// Randomly animate a card
-function livelyCards () {
-    setInterval(function() {
-        setInterval(function() {
-        //Pick a random card
-        let i = Math.floor(Math.random() * cards.length);
-        //Pick a random animation
-        let j = Math.floor(Math.random() * cardAnimations.length);
-        // ?Probably? call the random animation function
-        cards[i].cardAnimations[j];
-        },200) // ...Five times a second
-    },30000) // Once every 30 seconds...
-}
-
-// Possibly made redundant by CSS Transition
-// function card1OnClick () {
-//     if (card1.dataset.state == 'transformed') {
-//         card1.setAttribute('style', '');
-//         card1.setAttribute('data-state', '');
-//     } else {
-//         card1.setAttribute('style', 'transform:scaleY(1.5);transform:scaleX(2);');
-//         card1.setAttribute('data-state', 'transformed');
-//     }
+// // Randomly animate a card
+// function livelyCards () {
+//     setInterval(function() {
+//         setInterval(function() {
+//         //Pick a random card
+//         let i = Math.floor(Math.random() * cards.length);
+//         //Pick a random animation
+//         let j = Math.floor(Math.random() * cardAnimations.length);
+//         // ?Probably? call the random animation function
+//         cards[i].cardAnimations[j];
+//         },200) // ...Five times a second
+//     },30000) // Once every 30 seconds...
 // }
 
-// card1.addEventListener('click', card1OnClick);
+
 
 // Call functions that should begin as soon as the page has loaded
 function init () {
