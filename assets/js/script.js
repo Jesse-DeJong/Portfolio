@@ -21,7 +21,8 @@ const bioInj = [
     "netflix devotee",
     "parody partaker",
     "eternal optimist",
-    "smogon sycophant"
+    "smogon sycophant",
+    "amatuer archer",
 ];
 
 const colors = [
